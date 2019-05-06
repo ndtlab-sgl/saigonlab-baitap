@@ -1,7 +1,7 @@
 package edu.saigon.excercise.nhanguyen;
 
 
-public class bai7 {
+public class Bai07 {
 
     public static void main(String[] args){
         System.out.println("Số nguyên tố có 5 chữ số là: ");
@@ -10,7 +10,7 @@ public class bai7 {
 
     private static void timSNTCo5ChuSo() {
         for(int i = 10001; i < 99999; i++){
-            if(kiemTraSoNguyenTo(i) == true){
+            if(kiemTraSoNguyenTo(i)){
                 System.out.println(i);
             }
         }

@@ -2,7 +2,7 @@ package edu.saigon.excercise.nhanguyen;
 
 import java.util.Scanner;
 
-public class bai11 {
+public class Bai11 {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args){
@@ -13,7 +13,7 @@ public class bai11 {
        int i = 0;
        while (fibonacci(i) < n){
            int resul = fibonacci(i);
-           if(kiemTraSoNguyenTo(resul) == true){
+           if(kiemTraSoNguyenTo(resul)){
                System.out.print(resul + " ");
            }
            i++;

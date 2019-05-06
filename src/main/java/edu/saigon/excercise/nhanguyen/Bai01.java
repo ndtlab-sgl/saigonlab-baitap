@@ -2,7 +2,7 @@ package edu.saigon.excercise.nhanguyen;
 
 import java.util.Scanner;
 
-public class bai1 {
+public class Bai01 {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args){
@@ -12,10 +12,10 @@ public class bai1 {
         float b = scanner.nextFloat();
         System.out.print("Nhập hệ số c = ");
         float c = scanner.nextFloat();
-        giatPTBac2(a,b,c);
+        giaiPTBac2(a,b,c);
     }
 
-    private static void giatPTBac2(float a, float b, float c) {
+    private static void giaiPTBac2(float a, float b, float c) {
         //kiểm tra đầu vào
         if(a == 0 && b == 0) {
             System.out.println("Phương trình vô nghiệm");

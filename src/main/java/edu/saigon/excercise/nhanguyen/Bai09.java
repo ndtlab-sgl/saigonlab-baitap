@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class bai9 {
+public class Bai09 {
     private  static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args){

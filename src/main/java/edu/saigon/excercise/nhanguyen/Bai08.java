@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class bai8 {
+public class Bai08 {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args){

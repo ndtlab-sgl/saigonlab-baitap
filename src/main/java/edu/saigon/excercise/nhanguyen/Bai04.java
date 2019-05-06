@@ -2,7 +2,7 @@ package edu.saigon.excercise.nhanguyen;
 
 import java.util.Scanner;
 
-public class bai4 {
+public class Bai04 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args){
 
@@ -13,25 +13,14 @@ public class bai4 {
     }
 
     private static long timSoFibonacci(int n) {
-        long resul = 0;
-        long fn1 = 1, fn2 = 1;
-        if(n > 2){
-            for(int i = 2; i < n; i++){
-                resul = fn1 + fn2;
-                fn2 = fn1;
-                fn1 = resul;
-            }
-
+        if(n < 0){
+            return -1;
         }
-        else{
-            if(n == 0) {
-
-            }
-            if(n == 1 || n == 2){
-                resul = 1;
-
-            }
+        else if(n == 0 || n == 1){
+            return n;
         }
-        return resul;
+        else {
+            return timSoFibonacci(n - 1) + timSoFibonacci(n - 2);
+        }
     }
 }

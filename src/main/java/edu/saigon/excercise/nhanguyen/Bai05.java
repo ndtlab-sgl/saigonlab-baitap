@@ -2,7 +2,7 @@ package edu.saigon.excercise.nhanguyen;
 
 import java.util.Scanner;
 
-public class bai5 {
+public class Bai05 {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class bai5 {
 
     private static void timSoNguyenTo(int n) {
         for(int i = 0; i < n; i++){
-            if(kiemTraSoNguyenTo(i) == true){
+            if(kiemTraSoNguyenTo(i)){
                 System.out.print(i + " ");
             }
         }
