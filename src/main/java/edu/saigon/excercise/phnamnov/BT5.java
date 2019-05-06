@@ -1,4 +1,4 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class BT5 {
     public static boolean laSoNguyenTo(int n) {
-        double _n = Math.sqrt(n);
-        for (int i=2; i<=Math.floor(_n); i++) {
+        double sqrtN = Math.sqrt(n);
+        for (int i=2; i<=Math.floor(sqrtN); i++) {
             if (n%i == 0) return false;
         }
         return true;

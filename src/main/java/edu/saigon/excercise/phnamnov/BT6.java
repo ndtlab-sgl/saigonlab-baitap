@@ -1,9 +1,9 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 
 import java.util.Scanner;
 
 public class BT6 {
-    public static void lietKeSoNguyenToDauTien(int n) {
+    public static void inCacSoNguyenToDauTien(int n) {
         int i = 1;
         while (n != 0) {
             if (BT5.laSoNguyenTo(i)) {
@@ -19,6 +19,6 @@ public class BT6 {
         System.out.println("Chương trình liệt kê n số nguyên tố đâu tiên.");
         System.out.print("Nhập n=");
         n = scan.nextInt();
-        lietKeSoNguyenToDauTien(n);
+        inCacSoNguyenToDauTien(n);
     }
 }

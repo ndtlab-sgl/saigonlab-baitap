@@ -1,4 +1,4 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 
 import java.util.Scanner;
 

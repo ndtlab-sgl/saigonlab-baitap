@@ -1,12 +1,12 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 
 import java.util.Scanner;
 
 public class BT11 {
-    public static void cacSoNguyenToThuocDayFibonacci(int n) {
+    public static void inCacSoNguyenToThuocDayFibonacci(int n) {
         // bắt đầu từ 2 vì F(1) == F(2) == 1
         for (int i=2; i<n; i++) {
-            int fibonacci = BT4.Fibonacci(i);
+            int fibonacci = BT4.tinhFibonacci(i);
             if (fibonacci>n) {
                 return;
             }
@@ -21,6 +21,6 @@ public class BT11 {
         System.out.println("Chương trình liệt kê các số nguyên tố thuộc dãy Fibonacci và nhỏ hơn n");
         System.out.print("Nhập n=");
         n = scan.nextInt();
-        cacSoNguyenToThuocDayFibonacci(n);
+        inCacSoNguyenToThuocDayFibonacci(n);
     }
 }

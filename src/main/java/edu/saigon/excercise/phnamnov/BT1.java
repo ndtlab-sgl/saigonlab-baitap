@@ -1,15 +1,14 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 import java.util.Scanner;
 public class BT1 {
 
     public static void giaiPhuongTrinhBac1(int a, int b) {
-        if (a == 0) {
-            if (b == 0) {
-                System.out.println("Phương trình vô số nghiệm");
-            } else {
-                System.out.println("Phương trình vô nghiệm");
-            }
+        if (a==0 && b==0) {
+            System.out.println("Phương trình vô số nghiệm");
             return;
+        }
+        if (a == 0) {
+            System.out.println("Phương trình vô nghiệm");
         }
 
         // else
@@ -37,9 +36,9 @@ public class BT1 {
         }
 
         // else
-        double sqrt_delta = Math.sqrt(delta);
-        double x1 = (-b - sqrt_delta) / (2 * a);
-        double x2 = (-b + sqrt_delta) / (2 * a);
+        double sqrtDelta = Math.sqrt(delta);
+        double x1 = (-b - sqrtDelta) / (2 * a);
+        double x2 = (-b + sqrtDelta) / (2 * a);
         System.out.println("Phương trình có 2 nghiêm:");
         System.out.println("x1 = " + x1);
         System.out.println("x2 = " + x2);
@@ -58,7 +57,10 @@ public class BT1 {
         System.out.print("Nhập c=");
         c = scan.nextInt();
 
-        if (a == 0) giaiPhuongTrinhBac1(b, c);
-        else giaiPhuongTrinhBac2(a, b, c);
+        if (a == 0) {
+            giaiPhuongTrinhBac1(b, c);
+        } else {
+            giaiPhuongTrinhBac2(a, b, c);
+        }
     }
 }

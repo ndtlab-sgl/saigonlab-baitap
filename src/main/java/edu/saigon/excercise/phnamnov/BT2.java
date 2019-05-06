@@ -1,4 +1,4 @@
-package edu.saigon.excercise;
+package edu.saigon.excercise.phnamnov;
 import java.util.Scanner;
 public class BT2 {
     public static long tinhGiaiThua(int n) {
