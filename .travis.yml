@@ -1,0 +1,10 @@
+language: java
+
+before_install:
+  - echo "before_install"
+install:
+  - echo "Installing Maven"
+before_script:
+  - echo "Running Maven Install"
+script:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
