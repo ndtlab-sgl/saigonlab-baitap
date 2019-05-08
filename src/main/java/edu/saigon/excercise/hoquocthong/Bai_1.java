@@ -4,15 +4,13 @@ import java.util.Scanner;
 
 public class Bai_1 {
     public static void main(String[] args) {
-        double valueA, valueB, valueC;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào a: ");
-        valueA = scanner.nextDouble();
+        double valueA = scanner.nextDouble();
         System.out.println("Nhập vào b: ");
-        valueB = scanner.nextDouble();
+        double valueB = scanner.nextDouble();
         System.out.println("Nhập vào c: ");
-        valueC = scanner.nextDouble();
-
+        double valueC = scanner.nextDouble();
         Bai_1 bai1 = new Bai_1();
         bai1.PhuongTrinhBac2(valueA, valueB, valueC);
     }
