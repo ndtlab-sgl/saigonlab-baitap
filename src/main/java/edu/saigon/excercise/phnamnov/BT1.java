@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class BT1 {
 
     public static void giaiPhuongTrinhBac1(int a, int b) {
-        if (a==0 && b==0) {
+        if (a==0 && b == 0) {
             System.out.println("Phương trình vô số nghiệm");
             return;
         }
