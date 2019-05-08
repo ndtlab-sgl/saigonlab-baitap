@@ -21,10 +21,10 @@ public class Fibonacci {
         this.n = n;
     }
 
-    public void NhapN(){
+    public void nhapN(){
         int N;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap N= ");
+        System.out.println("nhapN N= ");
         N=sc.nextInt();
     }
 

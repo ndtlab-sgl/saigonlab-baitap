@@ -2,14 +2,14 @@ package edu.saigon.excercise.tuananh;
 
 import java.util.Scanner;
 
-public class LietKe_N_SoNT {
+public class LietKeNSoNT {
 
     private int n;
 
-    public LietKe_N_SoNT() {
+    public LietKeNSoNT() {
     }
 
-    public LietKe_N_SoNT(int n) {
+    public LietKeNSoNT(int n) {
         this.n = n;
     }
 
@@ -24,7 +24,7 @@ public class LietKe_N_SoNT {
     public void NhapN(){
         int N;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap N= ");
+        System.out.println("nhapN N= ");
         N=sc.nextInt();
         setN(N);
     }

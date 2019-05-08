@@ -3,14 +3,14 @@ package edu.saigon.excercise.tuananh;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fibonacci_NT {
+public class FibonacciNT {
 
     private int n;
 
-    public Fibonacci_NT() {
+    public FibonacciNT() {
     }
 
-    public Fibonacci_NT(int n) {
+    public FibonacciNT(int n) {
         this.n = n;
     }
 
@@ -24,14 +24,14 @@ public class Fibonacci_NT {
 
     @Override
     public String toString() {
-        return "Fibonacci_NT{" +
+        return "FibonacciNT{" +
                 "n=" + n +
                 '}';
     }
 
     public void xuatKQ() {
         System.out.println(toString());
-        timSoFB_NT(getN());
+        timSoFBNT(getN());
     }
 
     public boolean checkSoNT(double a) {
@@ -46,7 +46,7 @@ public class Fibonacci_NT {
         return true;
     }
 
-    public void timSoFB_NT(int n) {
+    public void timSoFBNT(int n) {
         List<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < n; i++) {
             int temp =timSoFibonacci(i);

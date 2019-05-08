@@ -24,7 +24,7 @@ public class TongChuSo {
     public void NhapN(){
         int N;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap N= ");
+        System.out.println("nhapN N= ");
         N=sc.nextInt();
         setN(N);
     }

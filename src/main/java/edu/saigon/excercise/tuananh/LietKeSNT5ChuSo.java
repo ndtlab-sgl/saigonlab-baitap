@@ -1,8 +1,8 @@
 package edu.saigon.excercise.tuananh;
 
-public class LietKeSNT_5ChuSo {
+public class LietKeSNT5ChuSo {
 
-    public LietKeSNT_5ChuSo() {
+    public LietKeSNT5ChuSo() {
 
     }
 

@@ -2,14 +2,14 @@ package edu.saigon.excercise.tuananh;
 
 import java.util.Scanner;
 
-public class SoNguyenTo_01 {
+public class SoNguyenTo01 {
 
     private double n;
 
-    public SoNguyenTo_01() {
+    public SoNguyenTo01() {
     }
 
-    public SoNguyenTo_01(double n) {
+    public SoNguyenTo01(double n) {
         this.n = n;
     }
 
@@ -21,10 +21,10 @@ public class SoNguyenTo_01 {
         this.n = n;
     }
 
-    public void NhapN(){
+    public void nhapN(){
         double N;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap N= ");
+        System.out.println("nhapN N= ");
         N=sc.nextDouble();
         setN(N);
     }
@@ -37,7 +37,7 @@ public class SoNguyenTo_01 {
         return true;
     }
 
-    public void XuatSoNT(double n){
+    public void xuatSoNT(double n){
         for (int i=1;i<n;i++)
         {
             if(checkSoNT(i)==true)
@@ -45,14 +45,14 @@ public class SoNguyenTo_01 {
         }
     }
 
-    public void XuatKQ(){
+    public void xuatKQ(){
         toString();
-        XuatSoNT(getN());
+        xuatSoNT(getN());
     }
 
     @Override
     public String toString() {
-        return "SoNguyenTo_01{" +
+        return "SoNguyenTo01{" +
                 "n=" + n +
                 '}';
     }

@@ -2,17 +2,17 @@ package edu.saigon.excercise.tuananh;
 
 import java.util.Scanner;
 
-public class UCLN_BCNN {
+public class UCLNBCNN {
 
     private double a;
     private double b;
     private double ucln;
     private double bcnn;
 
-    public UCLN_BCNN() {
+    public UCLNBCNN() {
     }
 
-    public UCLN_BCNN(double a, double b) {
+    public UCLNBCNN(double a, double b) {
         this.a = a;
         this.b = b;
     }
@@ -34,21 +34,29 @@ public class UCLN_BCNN {
     }
 
 
-    public void Nhap(){
-        double A,B;
+    public void nhapN(){
+
+        double A;
+        double B;
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap A= ");
+
+        System.out.println("nhapN A= ");
         A=sc.nextDouble();
-        System.out.println("Nhap B= ");
+
+        System.out.println("nhapN B= ");
         B=sc.nextDouble();
+
         setA(A);
         setB(B);
     }
 
-    public void XuatKQ(){
+    public void xuatKQ(){
         System.out.println(toString());
+
         ucln=timUCLN(getA(),getB());
         bcnn=timBCNN(getA(),getB());
+
         System.out.println("\nUCLN la: "+ucln+"\nBCNN la: "+bcnn);
     }
 
@@ -68,7 +76,7 @@ public class UCLN_BCNN {
 
     @Override
     public String toString() {
-        return "UCLN_BCNN{" +
+        return "UCLNBCNN{" +
                 "a=" + a +
                 ", b=" + b +
                 '}';

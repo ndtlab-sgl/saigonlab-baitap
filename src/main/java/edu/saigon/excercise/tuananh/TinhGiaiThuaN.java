@@ -21,20 +21,20 @@ public class TinhGiaiThuaN {
         this.n = n;
     }
 
-    public void Nhap_N(){
+    public void nhapN(){
         double N;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap N=");
+        System.out.println("nhapN N=");
         N=sc.nextDouble();
         setN(N);
     }
 
-    public void XuatKQ(){
+    public void xuatKQ(){
         System.out.println(toString());
-        System.out.println("Ket qua la: "+TinhGiaiThua());
+        System.out.println("Ket qua la: "+ tinhGiaiThua());
     }
 
-    public double TinhGiaiThua(){
+    public double tinhGiaiThua(){
         double n=getN(), p=1;
         for (int i = 1; i <= n; i++){
             p*=i;
