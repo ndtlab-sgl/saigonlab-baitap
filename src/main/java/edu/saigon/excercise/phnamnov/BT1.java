@@ -1,14 +1,17 @@
 package edu.saigon.excercise.phnamnov;
+
 import java.util.Scanner;
+
 public class BT1 {
 
     public static void giaiPhuongTrinhBac1(int a, int b) {
-        if (a==0 && b == 0) {
+        if (a == 0 && b == 0) {
             System.out.println("Phương trình vô số nghiệm");
             return;
         }
         if (a == 0) {
             System.out.println("Phương trình vô nghiệm");
+            return;
         }
 
         // else
@@ -17,7 +20,7 @@ public class BT1 {
     }
 
     public static void giaiPhuongTrinhBac2(int a, int b, int c) {
-        if (a==0 && b==0 && c==0) {
+        if (a == 0 && b == 0 && c == 0) {
             System.out.println("Phương trình vô số nghiệm");
             return;
         }
@@ -35,7 +38,7 @@ public class BT1 {
             return;
         }
 
-        // else
+        // Tinh sqrtDelta = ...
         double sqrtDelta = Math.sqrt(delta);
         double x1 = (-b - sqrtDelta) / (2 * a);
         double x2 = (-b + sqrtDelta) / (2 * a);
@@ -47,15 +50,18 @@ public class BT1 {
 
 
     public static void main(String[] args) {
-        int a, b, c;
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Phương trình bậc 2: ax2 + bx + c = 0");
+
         System.out.print("Nhập a=");
-        a = scan.nextInt();
+        int a = scan.nextInt();
+
         System.out.print("Nhập b=");
-        b = scan.nextInt();
+        int b = scan.nextInt();
+
         System.out.print("Nhập c=");
-        c = scan.nextInt();
+        int c = scan.nextInt();
 
         if (a == 0) {
             giaiPhuongTrinhBac1(b, c);
