@@ -1,10 +1,16 @@
 package edu.saigon.excercise.hoquocthong;
 
+import java.util.Scanner;
 
-public class Bai_7 {
+public class Bai06 {
     public static void main(String[] args) {
-        Bai_7 bai7 = new Bai_7();
-        bai7.xuatDaySNT();
+        int value;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập vào n: ");
+        value = scanner.nextInt();
+
+        Bai06 bai6 = new Bai06();
+        bai6.xuatDaySNT(value);
     }
 
     private boolean kiemTraSNT(int value) {
@@ -19,9 +25,10 @@ public class Bai_7 {
         return true;
     }
 
-    private void xuatDaySNT() {
-        System.out.print("Day so nguyen to co 5 chu so la : ");
-        for (int i = 10000; i < 100000; i++) {
+    private void xuatDaySNT(int value) {
+        System.out.print(value + " so nguyen to dau tien la : ");
+        int count = 0;
+        for (int i = 1; i < value; i++){
             if (kiemTraSNT(i)) {
                 System.out.print(i + " ");
             }

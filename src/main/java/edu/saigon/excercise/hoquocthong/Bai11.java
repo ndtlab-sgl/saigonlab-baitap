@@ -2,14 +2,14 @@ package edu.saigon.excercise.hoquocthong;
 
 import java.util.Scanner;
 
-public class Bai_11 {
+public class Bai11 {
     public static void main(String[] args) {
         int value;
         int result;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào n: ");
         value = scanner.nextInt();
-        Bai_11 bai11 = new Bai_11();
+        Bai11 bai11 = new Bai11();
 
         if (value < 0) {
             System.out.println("Gia tri phai la mot so lon hon 0!");

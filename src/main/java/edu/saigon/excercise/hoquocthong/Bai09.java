@@ -2,7 +2,7 @@ package edu.saigon.excercise.hoquocthong;
 
 import java.util.Scanner;
 
-public class Bai_9 {
+public class Bai09 {
     public static void main(String[] args) {
         int value;
         int result;
@@ -13,14 +13,14 @@ public class Bai_9 {
             System.out.println("Gia tri nhap vao phai lon hon 0");
         }
         if (value >= 0) {
-            Bai_9 bai9 = new Bai_9();
-            result = bai9.tongCacChuSoNguyen(value);
+            Bai09 bai9 = new Bai09();
+            result = bai9.tinhTongCacChuSoNguyen(value);
             System.out.println("Tong cac chu so cua " + value + " = " + result);
         }
 
     }
 
-    private int tongCacChuSoNguyen(int value) {
+    private int tinhTongCacChuSoNguyen(int value) {
         int tong = 0;
         while (value > 0) {
             int donvi = value % 10;

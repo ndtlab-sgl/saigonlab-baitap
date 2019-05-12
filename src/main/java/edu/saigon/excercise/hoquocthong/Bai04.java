@@ -2,14 +2,14 @@ package edu.saigon.excercise.hoquocthong;
 
 import java.util.Scanner;
 
-public class Bai_4 {
+public class Bai04 {
     public static void main(String[] args) {
         int value;
         int result;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào n: ");
         value = scanner.nextInt();
-        Bai_4 bai4 = new Bai_4();
+        Bai04 bai4 = new Bai04();
         result = bai4.tinhFibonacci(value);
         if (result == -1) {
             System.out.println("Khong co gia tri!");

@@ -3,9 +3,9 @@ package edu.saigon.excercise.hoquocthong;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bai_10 {
+public class Bai10 {
     public static void main(String[] args) {
-        Bai_10 bai10 = new Bai_10();
+        Bai10 bai10 = new Bai10();
         for (int i = 100000; i < 1000000; i++) {
             if (bai10.kiemTraSoThuanNghich(i)) {
                 System.out.print(i+"\t");

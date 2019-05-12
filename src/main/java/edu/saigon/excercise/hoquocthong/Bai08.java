@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Bai_8 {
+public class Bai08 {
     public static void main(String[] args) {
         int value;
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class Bai_8 {
             System.out.println("So nhap vao phai lon hon 0");
         }
         if (value >= 0) {
-            Bai_8 bai8 = new Bai_8();
+            Bai08 bai8 = new Bai08();
             bai8.xuat(value);
         }
     }
